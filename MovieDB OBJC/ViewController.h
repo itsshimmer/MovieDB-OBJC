@@ -8,6 +8,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+//@property (weak, nonatomic) IBOutlet UIImageView *movieImage;
+//@property (weak, nonatomic) IBOutlet UILabel *movieNameLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *movieDescriptionLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *movieRatingLabel;
 
 
 @end
