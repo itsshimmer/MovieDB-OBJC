@@ -26,6 +26,8 @@
 @property NSNumber* vote_count;
 @property NSData* poster;
 
+- (Movie*) initWithJSONDictionary: (NSDictionary*) dictionary;
+
 @end Movie;
 
 #endif /* Movie_h */
