@@ -22,10 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //_cellImage image = movie image
-    //_movieNameLabel text = movie name
-    //_movieDescriptionLabel text = movie description
-    //_movieRatingLabel text = movie rating
+    //_cellImage image = movie image;
+    //_movieNameLabel text = movie name;
+    //_movieDescriptionLabel text = movie description;
+    //_movieRatingLabel text = movie rating;
 }
 
 
