@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B401B27D27E8F72B00627B15 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = B401B27C27E8F72A00627B15 /* Movie.m */; };
 		B4BB57D427E8F4EF003A94BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D327E8F4EF003A94BF /* AppDelegate.m */; };
 		B4BB57D727E8F4EF003A94BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D627E8F4EF003A94BF /* SceneDelegate.m */; };
 		B4BB57DA27E8F4EF003A94BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D927E8F4EF003A94BF /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B401B27B27E8F70C00627B15 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		B401B27C27E8F72A00627B15 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		B4BB57CF27E8F4EF003A94BF /* MovieDB OBJC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieDB OBJC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BB57D227E8F4EF003A94BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4BB57D327E8F4EF003A94BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B401B27927E8F6FA00627B15 /* TMDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TMDB;
+			sourceTree = "<group>";
+		};
+		B401B27A27E8F6FF00627B15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B401B27B27E8F70C00627B15 /* Movie.h */,
+				B401B27C27E8F72A00627B15 /* Movie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B4BB57C627E8F4EF003A94BF = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +80,8 @@
 		B4BB57D127E8F4EF003A94BF /* MovieDB OBJC */ = {
 			isa = PBXGroup;
 			children = (
+				B401B27A27E8F6FF00627B15 /* Model */,
+				B401B27927E8F6FA00627B15 /* TMDB */,
 				B4BB57D227E8F4EF003A94BF /* AppDelegate.h */,
 				B4BB57D327E8F4EF003A94BF /* AppDelegate.m */,
 				B4BB57D527E8F4EF003A94BF /* SceneDelegate.h */,
@@ -148,6 +169,7 @@
 			files = (
 				B4BB57DA27E8F4EF003A94BF /* ViewController.m in Sources */,
 				B4BB57D427E8F4EF003A94BF /* AppDelegate.m in Sources */,
+				B401B27D27E8F72B00627B15 /* Movie.m in Sources */,
 				B4BB57E527E8F4F3003A94BF /* main.m in Sources */,
 				B4BB57D727E8F4EF003A94BF /* SceneDelegate.m in Sources */,
 			);
