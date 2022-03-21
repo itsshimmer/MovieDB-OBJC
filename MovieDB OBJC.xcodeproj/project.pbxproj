@@ -15,6 +15,9 @@
 		B4BB57DF27E8F4F3003A94BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BB57DE27E8F4F3003A94BF /* Assets.xcassets */; };
 		B4BB57E227E8F4F3003A94BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB57E027E8F4F3003A94BF /* LaunchScreen.storyboard */; };
 		B4BB57E527E8F4F3003A94BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57E427E8F4F3003A94BF /* main.m */; };
+		EC64C73927E8F99500CBA32F /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */; };
+		EC64C73B27E8FCE800CBA32F /* MovieDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */; };
+		EC64C73E27E8FEE000CBA32F /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		B4BB57E127E8F4F3003A94BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4BB57E327E8F4F3003A94BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4BB57E427E8F4F3003A94BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC64C73727E8F99500CBA32F /* MovieTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetails.storyboard; sourceTree = "<group>"; };
+		EC64C73C27E8FEE000CBA32F /* MovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,11 @@
 				B4BB57D627E8F4EF003A94BF /* SceneDelegate.m */,
 				B4BB57D827E8F4EF003A94BF /* ViewController.h */,
 				B4BB57D927E8F4EF003A94BF /* ViewController.m */,
+				EC64C73727E8F99500CBA32F /* MovieTableViewCell.h */,
+				EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */,
+				EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */,
+				EC64C73C27E8FEE000CBA32F /* MovieDetailViewController.h */,
+				EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */,
 				B4BB57DB27E8F4EF003A94BF /* Main.storyboard */,
 				B4BB57DE27E8F4F3003A94BF /* Assets.xcassets */,
 				B4BB57E027E8F4F3003A94BF /* LaunchScreen.storyboard */,
@@ -154,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC64C73B27E8FCE800CBA32F /* MovieDetails.storyboard in Resources */,
 				B4BB57E227E8F4F3003A94BF /* LaunchScreen.storyboard in Resources */,
 				B4BB57DF27E8F4F3003A94BF /* Assets.xcassets in Resources */,
 				B4BB57DD27E8F4EF003A94BF /* Main.storyboard in Resources */,
@@ -167,10 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC64C73E27E8FEE000CBA32F /* MovieDetailViewController.m in Sources */,
 				B4BB57DA27E8F4EF003A94BF /* ViewController.m in Sources */,
 				B4BB57D427E8F4EF003A94BF /* AppDelegate.m in Sources */,
 				B401B27D27E8F72B00627B15 /* Movie.m in Sources */,
 				B4BB57E527E8F4F3003A94BF /* main.m in Sources */,
+				EC64C73927E8F99500CBA32F /* MovieTableViewCell.m in Sources */,
 				B4BB57D727E8F4EF003A94BF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
