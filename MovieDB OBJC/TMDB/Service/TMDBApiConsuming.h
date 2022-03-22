@@ -7,14 +7,15 @@
 
 #ifndef TMDBApiConsuming_h
 #define TMDBApiConsuming_h
+#import "Movie.h"
 
 @interface TMDBApi : NSObject
 
-- (Movie[]*) requestPopularMovies: (void (^)([NSDictionary*]))completion (int)page;
+- (void) requestPopularMovies: (void (^)(NSMutableArray *))completion :(int)page;
 
-- (UIImage*) requestMoviePoster: (void (^)([NSDictionary*]))completion (NSString)poster_path;
+- (void) requestMoviePoster: (void (^)(UIImage*))completion :(NSString)poster_path;
 
-- (Movie[]*) requestNowPlaying: (void (^)([NSDictionary*]))completion (int)page;
+- (void) requestNowPlaying: (void (^)(NSMutableArray *))completion :(int)page;
 
 - (void) requestGenres: (void (^)([NSDictionary*]))completion;
 
