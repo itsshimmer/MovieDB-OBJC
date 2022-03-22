@@ -13,7 +13,7 @@
 @property BOOL adult;
 @property NSString* backdrop_path;
 @property NSSet* genre_ids;
-@property NSInteger* movieId;
+@property NSNumber* movieId;
 @property NSString* original_language;
 @property NSString* original_title;
 @property NSString* overview;

@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+//#import "Model/Movie.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Movie da api mockado
+//    Movie* movie = [Movie alloc];
+//    NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
+//    [dict setObject:[NSNumber numberWithBool:YES] forKey:@"adult"];
+//    [dict setValue:@"sadhaiud87ads" forKey:@"backdrop_path"];
+//    [movie initWithJSONDictionary:dict];
+    
     return YES;
 }
 
