@@ -24,8 +24,7 @@
 //    }
     NSSet* genreIds = [dictionary objectForKey:@"genre_ids"];
     [movie setGenre_ids:genreIds];
-    NSInteger* movieId = [dictionary objectForKey:@"id"];
-    [movie setMovieId:movieId];
+    [movie setMovieId:[dictionary objectForKey:@"id"]];
     [movie setOriginal_language:[dictionary objectForKey:@"original_language"]];
     [movie setOriginal_title:[dictionary objectForKey:@"original_title"]];
     [movie setOverview:[dictionary objectForKey:@"overview"]];
