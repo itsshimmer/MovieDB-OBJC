@@ -8,10 +8,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *cellImage;
-@property (weak, nonatomic) IBOutlet UILabel *movieNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *movieDescriptionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *movieRatingLabel;
 
 
 @end
