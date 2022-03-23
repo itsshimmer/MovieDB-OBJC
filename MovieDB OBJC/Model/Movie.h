@@ -7,6 +7,7 @@
 
 #ifndef Movie_h
 #define Movie_h
+#import <UIKit/UIKit.h>
 
 @interface Movie : NSObject
 
@@ -24,7 +25,7 @@
 @property BOOL video;
 @property NSNumber* vote_average;
 @property NSNumber* vote_count;
-@property NSData* poster;
+@property UIImage* poster;
 
 - (Movie*) initWithJSONDictionary: (NSDictionary*) dictionary;
 

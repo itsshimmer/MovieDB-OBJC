@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Movie.h"
+#import <UIKit/UIKit.h>
 
 @implementation Movie
 
@@ -30,14 +31,18 @@
     [movie setOverview:[dictionary objectForKey:@"overview"]];
     [movie setPopularity:[dictionary objectForKey:@"popularity"]];
     [movie setPoster_path:[dictionary objectForKey:@"poster_path"]];
+    
     //converter json para NSDate
     [movie setRelease_date:[dictionary objectForKey:@"release_date"]];
     [movie setTitle:[dictionary objectForKey:@"title"]];
+    
     //fix bool?
     [movie setVideo:[dictionary objectForKey:@"video"]];
     [movie setVote_average:[dictionary objectForKey:@"vote_average"]];
     [movie setVote_count:[dictionary objectForKey:@"vote_count"]];
-    NSData* imageData = nil; //naosei
+    
+    //buscar imagem na API
+    UIImage* imageData = nil;
     [movie setPoster:imageData];
     
     return movie;
