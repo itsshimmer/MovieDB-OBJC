@@ -10,8 +10,11 @@
 
 
 #endif /* TMDBService_h */
+#import "TMDBApiConsuming.h"
 
 @interface TMDBService : NSObject
+
+@property TMDBApi* api;
 
 - (void) getPopularMovies: (void (^)(NSMutableArray *))completion :(int)page;
 
