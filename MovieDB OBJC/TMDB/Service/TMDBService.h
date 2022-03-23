@@ -10,3 +10,11 @@
 
 
 #endif /* TMDBService_h */
+
+@interface TMDBService : NSObject
+
+- (void) getPopularMovies: (void (^)(NSMutableArray *))completion :(int)page;
+
+- (void) getNowPlaying: (void (^)(NSMutableArray *))completion :(int)page;
+
+@end

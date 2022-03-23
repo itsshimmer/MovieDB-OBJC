@@ -6,4 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TMDBApiConsuming.h"
 
+@interface TMDBApi ()
+
+
+
+@end
