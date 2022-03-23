@@ -18,7 +18,7 @@
 
 - (void) requestNowPlaying: (void (^)(NSMutableArray *))completion :(int)page;
 
-- (void) requestGenres: (void (^)(NSDictionary*))completion :()comp;
+- (void) requestGenres: (void (^)(NSDictionary*))completion :()genres;
 
 @end
 
