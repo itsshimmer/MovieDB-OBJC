@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TMDBApiConsuming.h"
+#import "UIKit/UIkit.h"
 
 @implementation TMDBApi 
 
@@ -52,7 +53,7 @@ NSString *language = @"en-US";
       NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
       if(httpResponse.statusCode == 200) {
           NSError *parseError = nil;
-          //UIImage *image = UIImage(data: data);
+          UIImage *image = UIImage(data: data);
       } else {
         NSLog(@"Error");
       }

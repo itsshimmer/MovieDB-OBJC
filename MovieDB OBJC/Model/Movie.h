@@ -1,3 +1,5 @@
+
+
 //
 //  Movie.h
 //  MovieDB OBJC
@@ -7,13 +9,14 @@
 
 #ifndef Movie_h
 #define Movie_h
+#import <UIKit/UIKit.h>
 
 @interface Movie : NSObject
 
 @property BOOL adult;
 @property NSString* backdrop_path;
 @property NSSet* genre_ids;
-@property NSInteger* id;
+@property NSNumber* movieId;
 @property NSString* original_language;
 @property NSString* original_title;
 @property NSString* overview;
@@ -24,7 +27,7 @@
 @property BOOL video;
 @property NSNumber* vote_average;
 @property NSNumber* vote_count;
-@property NSData* poster;
+@property UIImage* poster;
 
 - (Movie*) initWithJSONDictionary: (NSDictionary*) dictionary;
 
