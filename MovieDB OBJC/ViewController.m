@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "TMDB/Service/TMDBApiConsuming.h"
 
 @interface ViewController ()
 
@@ -15,6 +16,8 @@
 @implementation ViewController
 
 // declarar variavel movie
+//TMDBApi *api = [TMDBApi [TMDBApi alloc]];
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
