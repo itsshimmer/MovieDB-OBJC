@@ -39,7 +39,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *movieDetailCellIdentifier = @"movieDetail";
-    static NSString *descriptionCellIdentifier = @"movieDetailOverview";
+    static NSString *descriptionCellIdentifier = @"movieOverview";
 
     if (indexPath.row == 0) {
         MovieDetailCell *cell = (MovieDetailCell *)[tableView dequeueReusableCellWithIdentifier:movieDetailCellIdentifier];
@@ -60,7 +60,7 @@
         }
 
         cell.genresLabel.text = genres;
-        cell.rateLabel.text = self.movie.rating.doubleValue == 0 ? @"TBD" : [NSString stringWithFormat:@"%.1f", self.movie.rating.doubleValue];
+        cell.rateLabel.text = self.movie.rating.doubleValue == 0 ? @"0" : [NSString stringWithFormat:@"%.1f", self.movie.rating.doubleValue];
         cell.poster.image = self.movie.poster;
         cell.poster.layer.cornerRadius = 10;
 

@@ -218,9 +218,7 @@
             return cell;
             
         }
-    }
-    
-    else {
+    } else {
         if (indexPath.row > 0) {
             MovieTableViewCell *cell = (MovieTableViewCell *)[tableView dequeueReusableCellWithIdentifier:movieCellIdentifier];
             
