@@ -5,23 +5,22 @@
 //  Created by Lucca Molon on 22/03/22.
 //
 
-#ifndef TMDBApiConsuming_h
-#define TMDBApiConsuming_h
 #import "UIKit/UIKit.h"
-#import "Movie.h"
-#import <Foundation/Foundation.h>
+
 
 @interface TMDBApi : NSObject
 
-- (void) requestPopularMovies: (void (^)(NSMutableArray *))completion :(int)page;
+- (void)requestGenres: (void (^)(NSDictionary *, NSError *))completion;
 
-- (void) requestMoviePoster: (void (^)(UIImage*))completion :(NSString*)poster_path;
+- (void)requestTotalPagesWithURL:(NSString*)url completion:(void (^)(NSNumber *, NSError *))completion;
 
-- (void) requestNowPlaying: (void (^)(NSMutableArray *))completion :(int)page;
+- (void)requestMoviePosterWithURL:(NSString*)url completion:(void (^)(UIImage *, NSError *))completion;
 
-- (void) requestGenres: (void (^)(NSDictionary*))completion;
+- (void)requestPopularMoviesFromPage:(NSNumber*)page completion:(void (^)(NSArray *, NSError *))completion;
+
+- (void)requestNowPlayingMoviesFromPage:(NSNumber*)page completion:(void (^)(NSArray *, NSError *))completion;
 
 @end
 
 
-#endif /* TMDBApiConsuming_h */
+//171ea8ef33bff26411439b2fe3e357c9

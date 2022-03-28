@@ -7,30 +7,22 @@
 //  Created by João Brentano on 21/03/22.
 //
 
-#ifndef Movie_h
-#define Movie_h
 #import <UIKit/UIKit.h>
 
+#ifndef Movie_h
+#define Movie_h
+
 @interface Movie : NSObject
+    
+@property (nonatomic, assign) NSNumber *movieID;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *movieDescription;
+@property (nonatomic, copy) NSNumber *rating;
+@property (nonatomic, copy) NSString *posterURL;
+@property (nonatomic, copy) UIImage *poster;
+@property (nonatomic, copy) NSArray *genreIDs;
+@property (nonatomic, retain) NSMutableArray *genres;
 
-@property BOOL adult;
-@property NSString* backdrop_path;
-@property NSSet* genre_ids;
-@property NSNumber* movieId;
-@property NSString* original_language;
-@property NSString* original_title;
-@property NSString* overview;
-@property NSNumber* popularity;
-@property NSString* poster_path;
-@property NSDate* release_date;
-@property NSString* title;
-@property BOOL video;
-@property NSNumber* vote_average;
-@property NSNumber* vote_count;
-@property UIImage* poster;
-
-- (Movie*) initWithJSONDictionary: (NSDictionary*) dictionary;
-
-@end Movie;
+@end
 
 #endif /* Movie_h */

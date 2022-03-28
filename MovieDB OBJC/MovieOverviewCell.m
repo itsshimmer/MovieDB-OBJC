@@ -1,13 +1,14 @@
 //
-//  MovieTableViewCell.m
+//  MovieOverviewCell.m
 //  MovieDB OBJC
 //
-//  Created by Lucca Molon on 21/03/22.
+//  Created by Lucca Molon on 23/03/22.
 //
 
-#import "MovieTableViewCell.h"
+#import <Foundation/Foundation.h>
+#import "MovieOverviewCell.h"
 
-@implementation MovieTableViewCell
+@implementation MovieOverviewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

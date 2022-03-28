@@ -6,11 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@interface MovieDetailViewController : UITableViewController
 
-@interface MovieDetailViewController : UIViewController
+@property (nonatomic, strong) Movie *movie;
 
 @end
-
-NS_ASSUME_NONNULL_END
