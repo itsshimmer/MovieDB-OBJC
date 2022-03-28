@@ -20,24 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.title = @"Details";
     self.
     self.tableView.separatorColor = [UIColor clearColor];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *movieDetailCellIdentifier = @"movieDetail";
     static NSString *descriptionCellIdentifier = @"movieOverview";
 
@@ -58,15 +54,12 @@
                 [genres appendString:@", "];
             }
         }
-
         cell.genresLabel.text = genres;
         cell.rateLabel.text = self.movie.rating.doubleValue == 0 ? @"0" : [NSString stringWithFormat:@"%.1f", self.movie.rating.doubleValue];
         cell.poster.image = self.movie.poster;
         cell.poster.layer.cornerRadius = 10;
 
         return cell;
-
-
     } else {
         MovieOverviewCell *cell = (MovieOverviewCell *)[tableView dequeueReusableCellWithIdentifier:descriptionCellIdentifier];
         
