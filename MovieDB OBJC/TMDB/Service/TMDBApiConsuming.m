@@ -33,7 +33,6 @@
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString: url] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
-            // convert the NSData response to a dictionary
             NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             NSNumber *pages = dictionary[@"total_pages"];
             

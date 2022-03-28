@@ -88,10 +88,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="movieDescription" destination="yx6-jL-UOZ" id="pzd-ZJ-JFl"/>
-                                    <outlet property="nameLabel" destination="VmL-ui-cKR" id="rZy-Xg-NSD"/>
-                                    <outlet property="poster" destination="PVt-Iv-fSz" id="h2Q-Gf-cAC"/>
-                                    <outlet property="rateLabel" destination="rKI-og-z8I" id="ZHA-Hd-zVm"/>
+                                    <outlet property="movieDescription" destination="yx6-jL-UOZ" id="oAL-4B-XUL"/>
+                                    <outlet property="movieName" destination="VmL-ui-cKR" id="Sko-B9-PT5"/>
+                                    <outlet property="moviePoster" destination="PVt-Iv-fSz" id="IrT-xS-ckD"/>
+                                    <outlet property="movieRating" destination="rKI-og-z8I" id="zSE-e8-1tS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

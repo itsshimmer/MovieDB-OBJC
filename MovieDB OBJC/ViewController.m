@@ -23,10 +23,8 @@
     TMDBService *service;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    if ((self = [super initWithCoder:aDecoder]))
-    {
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super initWithCoder:aDecoder])) {
         popularMovies = [[NSMutableArray alloc] init];
         nowPlayingMovies = [[NSMutableArray alloc] init];
         popularMoviesPage = [NSNumber numberWithInt:1];
