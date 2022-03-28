@@ -11,15 +11,18 @@
 		B4BB57D427E8F4EF003A94BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D327E8F4EF003A94BF /* AppDelegate.m */; };
 		B4BB57D727E8F4EF003A94BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D627E8F4EF003A94BF /* SceneDelegate.m */; };
 		B4BB57DA27E8F4EF003A94BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57D927E8F4EF003A94BF /* ViewController.m */; };
-		B4BB57DD27E8F4EF003A94BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB57DB27E8F4EF003A94BF /* Main.storyboard */; };
 		B4BB57DF27E8F4F3003A94BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BB57DE27E8F4F3003A94BF /* Assets.xcassets */; };
 		B4BB57E227E8F4F3003A94BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB57E027E8F4F3003A94BF /* LaunchScreen.storyboard */; };
 		B4BB57E527E8F4F3003A94BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB57E427E8F4F3003A94BF /* main.m */; };
 		EC64C73927E8F99500CBA32F /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */; };
-		EC64C73B27E8FCE800CBA32F /* MovieDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */; };
 		EC64C73E27E8FEE000CBA32F /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */; };
 		EC64C74127EA3F2C00CBA32F /* TMDBApiConsuming.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C74027EA3F2C00CBA32F /* TMDBApiConsuming.m */; };
 		EC64C74427EA4DD700CBA32F /* TMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C74327EA4DD700CBA32F /* TMDBService.m */; };
+		EC64C74827F1FBCD00CBA32F /* MovieDBParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C74727F1FBCD00CBA32F /* MovieDBParser.m */; };
+		EC64C74B27F1FC1600CBA32F /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C74A27F1FC1600CBA32F /* Genre.m */; };
+		EC64C75027F207E300CBA32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC64C74F27F207E300CBA32F /* Main.storyboard */; };
+		EC64C75327F2084B00CBA32F /* MovieDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75227F2084B00CBA32F /* MovieDetailCell.m */; };
+		EC64C75627F2090100CBA32F /* MovieOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75527F2090100CBA32F /* MovieOverviewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,20 +35,27 @@
 		B4BB57D627E8F4EF003A94BF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B4BB57D827E8F4EF003A94BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B4BB57D927E8F4EF003A94BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B4BB57DC27E8F4EF003A94BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4BB57DE27E8F4F3003A94BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4BB57E127E8F4F3003A94BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4BB57E327E8F4F3003A94BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4BB57E427E8F4F3003A94BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC64C73727E8F99500CBA32F /* MovieTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
-		EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieDetails.storyboard; sourceTree = "<group>"; };
 		EC64C73C27E8FEE000CBA32F /* MovieDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		EC64C74027EA3F2C00CBA32F /* TMDBApiConsuming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDBApiConsuming.m; sourceTree = "<group>"; };
 		EC64C74227EA400800CBA32F /* TMDBApiConsuming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDBApiConsuming.h; sourceTree = "<group>"; };
 		EC64C74327EA4DD700CBA32F /* TMDBService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDBService.m; sourceTree = "<group>"; };
 		EC64C74527EA4DE600CBA32F /* TMDBService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDBService.h; sourceTree = "<group>"; };
+		EC64C74627F1FBB800CBA32F /* MovieDBParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDBParser.h; sourceTree = "<group>"; };
+		EC64C74727F1FBCD00CBA32F /* MovieDBParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDBParser.m; sourceTree = "<group>"; };
+		EC64C74927F1FC0B00CBA32F /* Genre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		EC64C74A27F1FC1600CBA32F /* Genre.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		EC64C74F27F207E300CBA32F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC64C75127F2083B00CBA32F /* MovieDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailCell.h; sourceTree = "<group>"; };
+		EC64C75227F2084B00CBA32F /* MovieDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailCell.m; sourceTree = "<group>"; };
+		EC64C75427F208F100CBA32F /* MovieOverviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieOverviewCell.h; sourceTree = "<group>"; };
+		EC64C75527F2090100CBA32F /* MovieOverviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieOverviewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +80,12 @@
 		B401B27A27E8F6FF00627B15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC64C74927F1FC0B00CBA32F /* Genre.h */,
+				EC64C74A27F1FC1600CBA32F /* Genre.m */,
 				B401B27B27E8F70C00627B15 /* Movie.h */,
 				B401B27C27E8F72A00627B15 /* Movie.m */,
+				EC64C74627F1FBB800CBA32F /* MovieDBParser.h */,
+				EC64C74727F1FBCD00CBA32F /* MovieDBParser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,10 +119,13 @@
 				B4BB57D927E8F4EF003A94BF /* ViewController.m */,
 				EC64C73727E8F99500CBA32F /* MovieTableViewCell.h */,
 				EC64C73827E8F99500CBA32F /* MovieTableViewCell.m */,
-				EC64C73A27E8FCE800CBA32F /* MovieDetails.storyboard */,
+				EC64C75127F2083B00CBA32F /* MovieDetailCell.h */,
+				EC64C75227F2084B00CBA32F /* MovieDetailCell.m */,
+				EC64C75427F208F100CBA32F /* MovieOverviewCell.h */,
+				EC64C75527F2090100CBA32F /* MovieOverviewCell.m */,
 				EC64C73C27E8FEE000CBA32F /* MovieDetailViewController.h */,
 				EC64C73D27E8FEE000CBA32F /* MovieDetailViewController.m */,
-				B4BB57DB27E8F4EF003A94BF /* Main.storyboard */,
+				EC64C74F27F207E300CBA32F /* Main.storyboard */,
 				B4BB57DE27E8F4F3003A94BF /* Assets.xcassets */,
 				B4BB57E027E8F4F3003A94BF /* LaunchScreen.storyboard */,
 				B4BB57E327E8F4F3003A94BF /* Info.plist */,
@@ -185,10 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC64C73B27E8FCE800CBA32F /* MovieDetails.storyboard in Resources */,
+				EC64C75027F207E300CBA32F /* Main.storyboard in Resources */,
 				B4BB57E227E8F4F3003A94BF /* LaunchScreen.storyboard in Resources */,
 				B4BB57DF27E8F4F3003A94BF /* Assets.xcassets in Resources */,
-				B4BB57DD27E8F4EF003A94BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,10 +218,14 @@
 				EC64C73E27E8FEE000CBA32F /* MovieDetailViewController.m in Sources */,
 				EC64C74127EA3F2C00CBA32F /* TMDBApiConsuming.m in Sources */,
 				B4BB57DA27E8F4EF003A94BF /* ViewController.m in Sources */,
+				EC64C75327F2084B00CBA32F /* MovieDetailCell.m in Sources */,
+				EC64C74827F1FBCD00CBA32F /* MovieDBParser.m in Sources */,
 				B4BB57D427E8F4EF003A94BF /* AppDelegate.m in Sources */,
 				EC64C74427EA4DD700CBA32F /* TMDBService.m in Sources */,
 				B401B27D27E8F72B00627B15 /* Movie.m in Sources */,
+				EC64C75627F2090100CBA32F /* MovieOverviewCell.m in Sources */,
 				B4BB57E527E8F4F3003A94BF /* main.m in Sources */,
+				EC64C74B27F1FC1600CBA32F /* Genre.m in Sources */,
 				EC64C73927E8F99500CBA32F /* MovieTableViewCell.m in Sources */,
 				B4BB57D727E8F4EF003A94BF /* SceneDelegate.m in Sources */,
 			);
@@ -214,14 +234,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B4BB57DB27E8F4EF003A94BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4BB57DC27E8F4EF003A94BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4BB57E027E8F4F3003A94BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
