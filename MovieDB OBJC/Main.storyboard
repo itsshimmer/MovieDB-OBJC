@@ -107,7 +107,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyQ-XV-NRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="94"/>
+            <point key="canvasLocation" x="1800" y="94"/>
         </scene>
         <!--Movie Detail View Controller-->
         <scene sceneID="wxP-WM-B4Z">
@@ -227,7 +227,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qds-RB-D7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2865" y="94"/>
+            <point key="canvasLocation" x="3017" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Qy-Mt-9Pl">
@@ -245,7 +245,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bf-Hm-WSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="93.75"/>
+            <point key="canvasLocation" x="658" y="94"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="labelColor"/>

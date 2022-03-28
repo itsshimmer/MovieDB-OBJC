@@ -14,10 +14,10 @@
 
 
 @implementation ViewController {
-    NSMutableArray *popularMovies;
+    NSNumber *nowPlayingMoviesTotalPages;
     NSMutableArray *nowPlayingMovies;
     NSNumber *popularMoviesTotalPages;
-    NSNumber *nowPlayingMoviesTotalPages;
+    NSMutableArray *popularMovies;
     NSNumber *popularMoviesPage;
     NSNumber *nowPlayingMoviesPage;
     TMDBService *service;
@@ -188,7 +188,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *titleCellIdentifier = @"label";
+    static NSString *titleCellIdentifier = @"title";
     static NSString *movieCellIdentifier = @"movie";
     
     if (indexPath.section == 0) {
@@ -218,9 +218,7 @@
             return cell;
             
         }
-    }
-    
-    else {
+    } else {
         if (indexPath.row > 0) {
             MovieTableViewCell *cell = (MovieTableViewCell *)[tableView dequeueReusableCellWithIdentifier:movieCellIdentifier];
             
@@ -256,7 +254,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"detail"]) {
-        
         MovieDetailViewController *vc = [segue destinationViewController];
         NSInteger index = [(NSIndexPath *)sender row];
         vc.movie = popularMovies[index];
